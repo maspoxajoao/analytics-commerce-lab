@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce fictício para laboratório de Google Analytics 4, Google Tag Manager, BigQuery e Looker Studio."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Contato | Analytics Commerce Lab</title>
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">A</span
+          ><span>Analytics Commerce Lab</span></a
+        >
+        <nav class="nav-links" aria-label="Principal">
+          <a data-nav="home" href="index.html">Início</a
+          ><a data-nav="products" href="products.html">Produtos</a
+          ><a data-nav="contact" href="contact.html">Contato</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button" data-user-label href="account.html">Entrar</a
+          ><a class="cart-link" href="cart.html" aria-label="Carrinho"
+            >Carrinho <span class="cart-count" data-cart-count>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Formulário</span>
+          <h1>Fale com a loja fictícia.</h1>
+          <p>
+            Use esta página para praticar medições de formulário e conversões
+            sem enviar dados para nenhum servidor.
+          </p>
+        </div>
+      </section>
+      <div class="container contact-wrap">
+        <div class="contact-card">
+          <form class="checkout-form" data-contact-form>
+            <label>Nome<input name="name" required /></label
+            ><label>E-mail<input type="email" name="email" required /></label
+            ><label
+              >Assunto<select name="subject">
+                <option>Dúvida sobre produto</option>
+                <option>Suporte</option>
+                <option>Parceria</option>
+              </select></label
+            ><label
+              >Mensagem<textarea
+                name="message"
+                rows="5"
+                required
+              ></textarea></label
+            ><button class="button button-primary" type="submit">
+              Enviar mensagem fictícia
+            </button>
+          </form>
+          <p class="form-success" data-form-success hidden>
+            Mensagem simulada enviada com sucesso.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Analytics Commerce Lab</strong>
+          <p>
+            Projeto fictício para estudo de Digital Analytics. Nenhuma compra é
+            real.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="assets/downloads/catalogo-produtos.csv"
+            download
+            data-download-catalog
+            >Baixar catálogo CSV</a
+          ><a
+            href="https://analytics.google.com/"
+            target="_blank"
+            rel="noopener"
+            data-outbound-link
+            >Google Analytics</a
+          ><a href="contact.html">Contato</a>
+        </div>
+      </div>
+      <div class="container">
+        <small>© <span data-year></span> Projeto educacional.</small>
+      </div>
+    </footer>
+    <div class="toast" data-toast></div>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

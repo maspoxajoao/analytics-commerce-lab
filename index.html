@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce fictício para laboratório de Google Analytics 4, Google Tag Manager, BigQuery e Looker Studio."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Analytics Commerce Lab</title>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">A</span
+          ><span>Analytics Commerce Lab</span></a
+        >
+        <nav class="nav-links" aria-label="Principal">
+          <a data-nav="home" href="index.html">Início</a
+          ><a data-nav="products" href="products.html">Produtos</a
+          ><a data-nav="contact" href="contact.html">Contato</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button" data-user-label href="account.html">Entrar</a
+          ><a class="cart-link" href="cart.html" aria-label="Carrinho"
+            >Carrinho <span class="cart-count" data-cart-count>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow"
+              >E-commerce fictício · laboratório de analytics</span
+            >
+            <h1>Um site realista para aprender mensuração de ponta a ponta.</h1>
+            <p>
+              Explore produtos, pesquise, adicione ao carrinho, conclua uma
+              compra simulada e use o mesmo projeto para praticar GA4, GTM, Data
+              Layer, BigQuery e Looker Studio.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="products.html"
+                >Explorar produtos</a
+              ><a class="button" href="#laboratorio"
+                >Ver pontos de mensuração</a
+              >
+            </div>
+            <div class="metrics">
+              <div class="metric">
+                <strong>6</strong><span>produtos fictícios</span>
+              </div>
+              <div class="metric">
+                <strong>7</strong><span>etapas de funil possíveis</span>
+              </div>
+              <div class="metric">
+                <strong>0</strong
+                ><span>tags prontas: você implementa no curso</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1400&q=85"
+              alt="Mesa com dispositivos de tecnologia"
+            />
+            <div class="hero-overlay">
+              <span class="eyebrow">Projeto de portfólio</span
+              ><strong
+                >Site → GTM → GA4 → BigQuery → SQL → Looker Studio</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Produtos em destaque</span>
+              <h2>Fluxo de e-commerce pronto para instrumentar.</h2>
+            </div>
+            <p>
+              Os elementos têm IDs e atributos <code>data-*</code> para
+              facilitar variáveis, acionadores e eventos no GTM.
+            </p>
+          </div>
+          <div class="product-grid" data-featured-products></div>
+        </div>
+      </section>
+      <section class="section" id="laboratorio">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Laboratório</span>
+              <h2>Interações pensadas para o curso.</h2>
+            </div>
+            <p>
+              O site funciona sozinho. A camada de analytics fica vazia para
+              você implementar conforme as aulas.
+            </p>
+          </div>
+          <div class="lab-strip">
+            <div class="lab-item">
+              <strong>Busca interna</strong
+              ><span
+                >Pesquise usando <code>?q=</code> e valide site search.</span
+              >
+            </div>
+            <div class="lab-item">
+              <strong>Download</strong
+              ><span>Baixe o catálogo CSV pelo rodapé.</span>
+            </div>
+            <div class="lab-item">
+              <strong>Formulários</strong
+              ><span>Use contato, newsletter e checkout fictício.</span>
+            </div>
+            <div class="lab-item">
+              <strong>E-commerce</strong
+              ><span
+                >Produto, carrinho, checkout e página de compra concluída.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container media-card">
+          <div>
+            <span class="eyebrow">Conteúdo incorporado</span>
+            <h2>Área de vídeo para exercícios de engajamento.</h2>
+            <p>
+              Há um vídeo incorporado para você praticar medições de reprodução
+              quando chegar a essa parte do curso.
+            </p>
+          </div>
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/ysz5S6PUM-U"
+            title="Vídeo demonstrativo"
+            loading="lazy"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Busca</span>
+              <h2>Teste a pesquisa interna.</h2>
+            </div>
+          </div>
+          <form
+            class="search-panel"
+            action="products.html"
+            method="get"
+            data-site-search
+          >
+            <input
+              name="q"
+              placeholder="Ex.: teclado, áudio, notebook..."
+              aria-label="Buscar produtos"
+            /><button class="button button-primary" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Analytics Commerce Lab</strong>
+          <p>
+            Projeto fictício para estudo de Digital Analytics. Nenhuma compra é
+            real.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="assets/downloads/catalogo-produtos.csv"
+            download
+            data-download-catalog
+            >Baixar catálogo CSV</a
+          ><a
+            href="https://analytics.google.com/"
+            target="_blank"
+            rel="noopener"
+            data-outbound-link
+            >Google Analytics</a
+          ><a href="contact.html">Contato</a>
+        </div>
+      </div>
+      <div class="container">
+        <small>© <span data-year></span> Projeto educacional.</small>
+      </div>
+    </footer>
+    <div class="toast" data-toast></div>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce fictício para laboratório de Google Analytics 4, Google Tag Manager, BigQuery e Looker Studio."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Pedido concluído | Analytics Commerce Lab</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">A</span
+          ><span>Analytics Commerce Lab</span></a
+        >
+        <nav class="nav-links" aria-label="Principal">
+          <a data-nav="home" href="index.html">Início</a
+          ><a data-nav="products" href="products.html">Produtos</a
+          ><a data-nav="contact" href="contact.html">Contato</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button" data-user-label href="account.html">Entrar</a
+          ><a class="cart-link" href="cart.html" aria-label="Carrinho"
+            >Carrinho <span class="cart-count" data-cart-count>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="success-wrap" data-order-confirmation></section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Analytics Commerce Lab</strong>
+          <p>
+            Projeto fictício para estudo de Digital Analytics. Nenhuma compra é
+            real.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="assets/downloads/catalogo-produtos.csv"
+            download
+            data-download-catalog
+            >Baixar catálogo CSV</a
+          ><a
+            href="https://analytics.google.com/"
+            target="_blank"
+            rel="noopener"
+            data-outbound-link
+            >Google Analytics</a
+          ><a href="contact.html">Contato</a>
+        </div>
+      </div>
+      <div class="container">
+        <small>© <span data-year></span> Projeto educacional.</small>
+      </div>
+    </footer>
+    <div class="toast" data-toast></div>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/thanks.js"></script>
+  </body>
+</html>
